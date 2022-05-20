@@ -5,6 +5,11 @@ FiniteStateMachine::FiniteStateMachine(std::vector<BaseState*> states,
     CmdPanel *cmdPanel, size_t cmdChannel, double dt)
     :_states(states), _cmdChannel(cmdChannel), _cmdPanel(cmdPanel){
     
+    if(states.size() == 0){
+        std::cout << "[ERROR] FiniteStateMachine::FiniteStateMachine, the states is empty" << std::endl;
+        exit(-1);
+    }
+
     _currentState = states.at(0);
     std::cout << "FSM start from " << _currentState->getStateName() << std::endl;
     _currentState->enter();
