@@ -3,9 +3,8 @@ project(fsm)
 
 include_directories(
     include
-    "/home/bian/bianLib"
-    "/home/bian/testField"
-    # ${Boost_INCLUDE_DIR}
+    "/home/$ENV{USER}/bianLib"
+    # "/home/bian/testField"
 )
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -pthread")
@@ -13,8 +12,8 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -pthread")
 add_executable(fsm 
     test.cpp 
     src/FiniteStateMachine.cpp
-    /home/bian/bianLib/time/src/AbsoluteTimer.cpp
-    /home/bian/bianLib/multiThread/src/Loop.cpp
-    /home/bian/bianLib/CmdPanel/src/CmdPanel.cpp
-    /home/bian/bianLib/Keyboard/src/Keyboard.cpp
+    /home/$ENV{USER}/bianLib/time/src/AbsoluteTimer.cpp
+    /home/$ENV{USER}/bianLib/multiThread/src/Loop.cpp
+    /home/$ENV{USER}/bianLib/CmdPanel/src/CmdPanel.cpp
+    /home/$ENV{USER}/bianLib/Keyboard/src/Keyboard.cpp
 )
