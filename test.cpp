@@ -1,5 +1,6 @@
 #include "FiniteStateMachine.h"
-#include "Keyboard/Keyboard.h"
+#include "CmdPanel/Keyboard.h"
+#include <iostream>
 
 enum class FSMStates{
     NONE,

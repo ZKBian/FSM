@@ -15,5 +15,7 @@ add_executable(fsm
     /home/$ENV{USER}/bianLib/time/src/AbsoluteTimer.cpp
     /home/$ENV{USER}/bianLib/multiThread/src/Loop.cpp
     /home/$ENV{USER}/bianLib/CmdPanel/src/CmdPanel.cpp
-    /home/$ENV{USER}/bianLib/Keyboard/src/Keyboard.cpp
+    /home/$ENV{USER}/bianLib/CmdPanel/src/Keyboard.cpp
+    /home/$ENV{USER}/bianLib/CmdPanel/src/KeyAction.cpp
+    /home/$ENV{USER}/bianLib/CmdPanel/src/ContinuousInputCmdPanel.cpp
 )
